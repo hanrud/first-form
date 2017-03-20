@@ -1,145 +1,154 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register Form</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/lock.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-
 </head>
+
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<img src="images/logo_gora.png" alt="logo"/>
+			<a href="#"><img src="images/logo_gora.png" alt="logo" /></a>
 		</div>
 		<div class="container">
-			<div class= "form-float-L">
-				<h3>Register form</h3>
-				<div class="form_data">
-					<form>
-						<div class="input-text">
-							<i class="icon-user-1"></i>
-							<input type="text" name="username" placeholder="Username" required>
-						</div>	
-						<div class="input-text">
-							<i class="icon-lock"></i>
-							<input type="password" name="password" placeholder="Password" required>
-						</div>
-						<div class="input-text">
-							<i class="icon-lock"></i>
-							<input type="password" name="confirm_password" placeholder="Confirm Password" required>
-						</div>
-						<div class="input-text">
-							<i class="icon-mail-alt"></i>
-							<input type="email" name="email" placeholder="Email" required>
-						</div>
-						<div class="input-text">
-							<i class="icon-location-1"></i>
-							<select name="location" >
-								<option>Your location</option>
-								<option>Poland</option>	
-								<option>Germany</option>
-								<option>UK</option>
-								<option>Spain</option>
-								<option>France</option>
-							</select>
-						</div>
-						<div class="checkbox">
-							<input id="checkbox1" type="checkbox" name="accept"/>
-							<label for="checkbox1">I have read and accept the terms of use.</label>
-						</div>
-						<input type="submit" class="btn1" value="Sign up">
-					</form>
+			<div class="left">
+				<div class="form">
+					<h3>Register form</h3>
+					<div class="form_data">
+						<form>
+							<div class="input-text">
+								<i class="icon-user-1"></i>
+								<input type="text" name="username" placeholder="Username" required>
+							</div>
+							<div class="input-text">
+								<i class="icon-lock"></i>
+								<input type="password" name="password" placeholder="Password" required>
+							</div>
+							<div class="input-text">
+								<i class="icon-lock"></i>
+								<input type="password" name="confirm_password" placeholder="Confirm Password" required>
+							</div>
+							<div class="input-text">
+								<i class="icon-mail-alt"></i>
+								<input type="email" name="email" placeholder="Email" required>
+							</div>
+							<div class="input-text">
+								<i class="icon-location-1"></i>
+								<select name="location">
+									<option>Your location</option>
+									<option>Poland</option>
+									<option>Germany</option>
+									<option>UK</option>
+									<option>Spain</option>
+									<option>France</option>
+								</select>
+							</div>
+							<div class="checkbox">
+								<input id="checkbox1" type="checkbox" name="accept" />
+								<label for="checkbox1">I have read and accept the terms of use.</label>
+							</div>
+							<input type="submit" class="btn1" value="Sign up">
+						</form>
+					</div>
+				</div>
+				<div class="form">
+					<h3>Send Email</h3>
+					<div class="form_data">
+						<form>
+							<div class="input-text">
+								<i class="icon-user-1"></i>
+								<input type="text" name="name" placeholder="Your Name" required>
+							</div>
+							<div class="input-text">
+								<i class="icon-mail-alt"></i>
+								<input type="email" name="email" placeholder="Your Email" required>
+							</div>
+
+							<textarea name="message" placeholder="Type Your Message..." required></textarea>
+							<div class="checkbox">
+								<input id="checkbox3" type="checkbox" name="send" checked="checked">
+								<label for="checkbox3">Send a copy to my Email</label>
+							</div>
+							<input type="submit" value="Send Email" class="btn1">
+						</form>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="right">
+				<div class="form">
+					<h3>Sign in form</h3>
+					<div class="form_data">
+						<form>
+							<div class="input-text">
+								<i class="icon-user-1"></i>
+								<input type="text" name="username" placeholder="Username" required>
+							</div>
+							<div class="input-text">
+								<i class="icon-lock"></i>
+								<input type="password" name="Password" placeholder="Password" required>
+							</div>
+							<div class="btns">
+								<div class="checkbox">
+									<input id="checkbox2" type="checkbox" checked="checked">
+									<label for="checkbox2">Remember me</label>
+								</div>
+								<input type='submit' value="Sign in" class="btn2">
+							</div>
+						</form>
+
+					</div>
+				</div>
+				<div class="form">
+					<h3>Recover form</h3>
+					<div class="form_data">
+						<form>
+							<div class="input-text">
+								<i class="icon-mail-alt"></i>
+								<input type="email" name="email" placeholder="Enter your Email" required>
+							</div>
+							<div class="input-text">
+								<i class="icon-mobile-alt"></i>
+								<input type="text" name="phone" placeholder="Enter your Phone Number" required>
+							</div>
+							<input type="submit" value="Send" class="btn2">
+							<input type="button" value="Done" class="btn3">
+						</form>
+					</div>
+
+				</div>
+				<div class="form">
+					<h3>Subscribe form</h3>
+					<div class="form_data">
+						<form>
+							<div class="input-text">
+								<i class="icon-mail-alt"></i>
+								<input type="email" name="email" placeholder="Enter your Email" required>
+							</div>
+							<input type="submit" value="Subscribe" class="btn2">
+							<input type="button" value="No, thanks" class="btn4">
+						</form>
+					</div>
+
+				</div>
+
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo_dol.gif" alt="logo">
+						<img src="images/logo_dol_2.png" alt="adres">
+					</a>
 				</div>
 			</div>
 
-			<div class="form-float-R">	
-				<h3>Sign in form</h3>
-				<div class="form_data">
-					<form>
-						<div class="input-text">
-							<i class="icon-user-1"></i>
-							<input type="text" name="username" placeholder="Username" required>
-						</div>
-						<div class="input-text">
-							<i class="icon-lock"></i>
-							<input type="password" name="Password" placeholder="Password" required>
-						</div>
-						<div class="btns">
-							<div class="checkbox">	
-								<input id="checkbox2" type="checkbox" checked="checked">
-								<label for="checkbox2">Remember me</label>
-							</div>
-							<input type='submit' value="Sign in" class="btn2"> 
-						</div>
-					</form>
-					
-				</div>
-			</div>
-			<div class="form-float-R">
-				<h3>Recover form</h3>
-				<div class="form_data">
-					<form>
-						<div class="input-text">
-							<i class="icon-mail-alt"></i>
-							<input type="email" name="email" placeholder="Enter your Email" required>
-						</div>
-						<div class="input-text">
-							<i class="icon-mobile-alt"></i>
-							<input type="text" name="phone" placeholder="Enter your Phone Number" required>
-						</div>
-						<input type="submit" value="Send" class="btn2">
-						<input type="button" value="Done" class="btn3">
-					</form>
-				</div>
-				
-			</div>
-			<div class="form-float-L">
-				<h3>Send Email</h3>
-				<div class="form_data">
-					<form>
-						<div class="input-text">
-							<i class="icon-user-1"></i>
-							<input type="text" name="name" placeholder="Your Name" required>
-						</div>
-						<div class="input-text">
-							<i class="icon-mail-alt"></i>
-							<input type="email" name="email" placeholder="Your Email" required>
-						</div>
-	
-						<textarea name="message" placeholder="Type Your Message..." required></textarea>
-						<div class="checkbox">
-							<input id="checkbox3" type="checkbox" name="send" checked="checked">
-							<label for="checkbox3">Send a copy to my Email</label> 
-						</div>
-						<input type="submit" value="Send Email" class="btn1">
-					</form>
-				</div>
-			</div>
-			<div class="form-float-R">
-				<h3>Subscribe form</h3>
-				<div class="form_data">
-					<form>
-						<div class="input-text">
-							<i class="icon-mail-alt"></i>
-							<input type="email" name="email" placeholder="Enter your Email" required>
-						</div>
-						<input type="submit" value="Subscribe" class="btn2">
-						<input type="button" value="No, thanks" class="btn4">
-					</form>
-				</div>
-				
-			</div>
-			
-			<div class="logo">
-				<a href="index.html"><img src="images/logo_dol.gif" alt="logo">
-				<img src="images/logo_dol_2.png" alt="adres"></a>
-			</div>
-			<div class='clear'></div>
-			
-			
+
 		</div>
 	</div>
 </body>
+
 </html>
